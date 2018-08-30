@@ -7,7 +7,7 @@
         <div class="subtitle">{{currentCompany.company_desc}}</div>
       </el-col>
       <el-col>
-        <el-button class="pull-right" style="margin-top: 8px;" @click="backToCompanyList()" size="small">项目列表</el-button>
+        <el-button class="pull-right" style="margin-top: 8px;" @click="backToCompanyList()" size="small">公司列表</el-button>
       </el-col>
     </el-row>
   </el-card>

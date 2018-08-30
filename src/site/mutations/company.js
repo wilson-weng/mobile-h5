@@ -25,6 +25,7 @@ const getters = {
 
 const mutations = {
   [mutationTypes.SET_COMPANY_LIST](state, obj) {
+    console.log(obj)
     state.company_list = obj;
   },
 };

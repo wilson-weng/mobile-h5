@@ -29,14 +29,14 @@
       }),
     },
     methods: {
-      ...mapActions(['setCurrentCompany']),
+      ...mapActions(['getCompanyList', 'setCurrentCompany']),
       enterCompany(company){
         this.setCurrentCompany(company);
         this.$router.push({path: 'worktable'});
       }
     },
     created(){
-      this.setCurrentcompany({});
+      this.getCompanyList({page: 1});
     }
 
   }
