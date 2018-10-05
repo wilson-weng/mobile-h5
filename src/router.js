@@ -1,37 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import login from './site/views/login.vue'
-import main from './site/views/main.vue'
-import worktable from './site/views/workTable.vue'
-import company from './site/views/companyList.vue'
+import recruitPost from './site/views/recruitPost.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+
   {
-    path: '/login',
-    name: 'login',
-    component: login,
-  },
-  {
-    path: "/",
-    name: "main",
-    component: main,
-    children: [{
-      path: '/company',
-      name: 'company',
-      component: company,
-    },{
-      path: '/worktable',
-      name: 'worktable',
-      component: worktable,
-    }]
-  },
-  {
-    path: '/logout',
-    name: 'logout',
-    redirect: '/login',
-  },
+    path: "/recruit/post",
+    name: "recruitPost",
+    component: recruitPost,
+  }
 ]
 
 const router = new VueRouter({

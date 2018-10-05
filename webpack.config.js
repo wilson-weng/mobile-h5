@@ -126,7 +126,7 @@ const development = {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: false,
-    port: 8081,
+    port: 8082,
     hot: true,
     stats: 'errors-only',
     proxy: config.proxy || {},
