@@ -184,6 +184,18 @@ $spacers: (
   margin-left: 6px !important;
 }
 
-.color-bg {
-  background-color: rgb(249, 251, 253) !important;
+.bg-default {
+  background-color: #F5F5F5;
+}
+
+.bg-pure {
+  background-color: #ffffff;
+}
+
+.bottom-line {
+  border-bottom: 1px solid $border-color;
+}
+
+.color-text {
+  color: #656b79;
 }

@@ -2,9 +2,9 @@ import * as actions from '../actions/proj';
 import * as MutationTypes from '../constants/mutationTypes';
 
 const initState = {
-    base: {},
+    base: null,
     detail: [],
-    highlight: {},
+    highlight: null,
 };
 
 const getters = {

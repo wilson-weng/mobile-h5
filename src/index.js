@@ -10,5 +10,10 @@ import 'mint-ui/lib/style.css'
 import 'src/site/styles/index.scss'
 
 Vue.use(MintUI)
+
+
+import vueScrollTo from 'src/site/utils/scrollTo';
+
+Vue.use(vueScrollTo, {});
 // eslint-disable-next-line
 new Vue({ ...App, router, store }).$mount('#site')

@@ -1,5 +1,5 @@
 {
-  "name": "fe-cms",
+  "name": "mobile-h5",
   "version": "0.1.0",
   "private": true,
   "description": "customer management system front-end",
@@ -13,7 +13,7 @@
     "format": "eslint --fix 'src/**/*.{js,vue}'",
     "start": "webpack-dev-server --env.development",
     "debug": "webpack --env.production && node deploy.js",
-    "version": "webpack --env.production && node deploy.js",
+    "version": "webpack --env.production",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
