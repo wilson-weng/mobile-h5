@@ -16,7 +16,7 @@
         </div>
         <div>
           <div class="inline-block subtitle">{{ base.address }}</div>
-          <div class="subtitle pull-right">更新时间: 2018.9.1</div>
+          <div class="subtitle pull-right">更新时间: {{base.update_time}}</div>
         </div>
       </div>
     </div>
@@ -70,7 +70,11 @@
     methods: {
       ...mapActions(['getProjBaseInfo', 'getProjContent']),
       handler(){
-        console.log(this.tabs)
+        wx.miniProgram.getEnv(function(res) {
+          if(res.miniprogram){
+            wx.miniProgram.postMessage({event: 'register'})
+          }
+        })
       },
 
     }
